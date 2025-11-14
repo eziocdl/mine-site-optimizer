@@ -39,9 +39,9 @@ export function Header({
   ];
 
   const languages = [
-    { code: "en", name: "English", flag: "🇬🇧" },
-    { code: "pt", name: "Português", flag: "🇧🇷" },
-    { code: "es", name: "Español", flag: "🇪🇸" },
+    { code: "en", name: "English" },
+    { code: "pt", name: "Português" },
+    { code: "es", name: "Español" },
   ];
 
   const isActive = (path: string) => location === path;
@@ -150,7 +150,6 @@ export function Header({
                     className={currentLanguage === lang.code ? "bg-accent" : ""}
                     data-testid={`option-language-${lang.code}`}
                   >
-                    <span className="mr-2">{lang.flag}</span>
                     {lang.name}
                   </DropdownMenuItem>
                 ))}

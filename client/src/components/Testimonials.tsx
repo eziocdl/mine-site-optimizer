@@ -30,7 +30,7 @@ export function Testimonials({ testimonials }: TestimonialsProps) {
               "{testimonial.quote}"
             </p>
             <div className="flex items-center gap-3">
-              <Avatar>
+              <Avatar data-testid={`avatar-testimonial-${testimonial.id}`}>
                 <AvatarImage src={testimonial.image} alt={testimonial.name} />
                 <AvatarFallback>
                   {testimonial.name.split(" ").map(n => n[0]).join("").slice(0, 2)}

@@ -58,6 +58,7 @@ export function PhotoGallery({ images, categories = ["All"] }: PhotoGalleryProps
               alt={image.alt}
               className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
               loading="lazy"
+              data-testid={`img-gallery-thumb-${image.id}`}
             />
             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors" />
           </button>

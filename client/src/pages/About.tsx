@@ -139,7 +139,7 @@ export default function About({ currentLanguage }: AboutProps) {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
-            <Card className="hover-elevate">
+            <Card className="hover-elevate" data-testid="card-mission">
               <CardContent className="pt-6">
                 <h2 className="text-2xl font-bold mb-4" data-testid="text-mission-title">
                   {t.missionTitle}
@@ -149,7 +149,7 @@ export default function About({ currentLanguage }: AboutProps) {
                 </p>
               </CardContent>
             </Card>
-            <Card className="hover-elevate">
+            <Card className="hover-elevate" data-testid="card-vision">
               <CardContent className="pt-6">
                 <h2 className="text-2xl font-bold mb-4" data-testid="text-vision-title">
                   {t.visionTitle}
@@ -201,6 +201,7 @@ export default function About({ currentLanguage }: AboutProps) {
                 src={facilityImage}
                 alt="Mining facility"
                 className="w-full h-auto object-cover"
+                data-testid="img-facility"
               />
             </div>
           </div>
@@ -212,6 +213,7 @@ export default function About({ currentLanguage }: AboutProps) {
                 src={teamImage}
                 alt="Our team"
                 className="w-full h-auto object-cover"
+                data-testid="img-team"
               />
             </div>
             <div className="order-1 lg:order-2">

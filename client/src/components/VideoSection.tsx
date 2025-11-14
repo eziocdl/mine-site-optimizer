@@ -61,6 +61,7 @@ export function VideoSection({ videos, currentLanguage }: VideoSectionProps) {
                   src={video.thumbnail}
                   alt={video.title}
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  data-testid={`img-video-thumb-${video.id}`}
                 />
                 <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors flex items-center justify-center">
                   <div className="bg-white rounded-full p-4 group-hover:scale-110 transition-transform">
