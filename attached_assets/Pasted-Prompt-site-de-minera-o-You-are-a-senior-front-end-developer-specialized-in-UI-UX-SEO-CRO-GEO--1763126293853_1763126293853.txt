@@ -1,0 +1,53 @@
+Prompt site de mineração  You are a senior front-end developer specialized in UI/UX, SEO, CRO, GEO, design, and digital marketing. Your goal is to create a complete, functional prototype (MVP) of a responsive institutional website for a mining cooperative, aimed at international investors and stakeholders. The output must be a ready-to-deploy code package (HTML + CSS + JS + README) with sample content, fully responsive structure, and automatic placeholders for cooperative name and logo.
+Variable Inputs (replace the XML variables): <cooperative>{{COOPERATIVE_NAME}}</cooperative> <logo>{{LOGO_FILE_or_PLACEHOLDER}}</logo> <languages>{{PT, EN, ES, ...}}</languages> <palette>{{EARTH_TONES/GREENS/BLUES}}</palette> <contacts>{{EMAIL, PHONE, ADDRESS}}</contacts> <reports>{{PDF_REPORT_LIST}}</reports> <testimonials>{{SAMPLE_TESTIMONIALS}}</testimonials> <images>{{IMAGE_GALLERY}}</images>
+Mandatory Page Structure: Create the following main pages: Home, About Us, Products, Investors, Sustainability, News, Contact.
+Each page must include:
+* Placeholder for logo and cooperative name.
+* Rotating banner/carousel for institutional highlights.
+* Section for institutional videos.
+* Photo gallery.
+* Download links for reports (social, environmental, financial).
+* Contact form and newsletter subscription.
+* Visible call-to-action buttons and testimonials.
+* Fixed top menu, internal search, multilanguage support.
+Logo and Name Placeholder (required):
+<header> <div class="logo-area"> <div class="logo-placeholder" aria-label="Logo {{COOPERATIVE_NAME}}"> <img src="{{LOGO_FILE_or_PLACEHOLDER}}" alt="{{COOPERATIVE_NAME}} Logo" onerror="this.outerHTML='<div class=\'logo-fallback\'>{{COOPERATIVE_NAME}}</div>';"> </div> <h1 class="site-name">{{COOPERATIVE_NAME}}</h1> </div> <nav> ... </nav> </header> If the logo is not found, a block with the cooperative name will be shown automatically.
+Technical and Design Requirements:
+* Semantic HTML: use <header>, <nav>, <main>, <section>, <article>, <footer>.
+* Modern CSS: use Flexbox and Grid for a clean, modular, responsive layout.
+* Lightweight JavaScript: only basic scripts (carousel, form validation, language switcher).
+* Accessibility (A11y): proper contrast, keyboard navigation, labels, ARIA attributes.
+* SEO: meta tags, structured titles, friendly URLs, JSON-LD microdata.
+* Performance: optimized code, fast loading, mobile-first.
+Color Palette and Visual Style:
+* Industry trends recommend earth tones (clay, sand, ochre), dark greens (pine, moss), deep blues (slate, navy), and metallic accents for professional contrast and corporate appeal in the mining sector.
+* Accessible typography (e.g., Inter or Roboto, minimum 16px for body text).
+* Clean, consistent icons.
+* Modular, easy-to-read layout.
+Deliverable (single output): Provide in a single result all files below, with inline comments and instructions:
+1. Directory structure /project-root │ ├── index.html ├── about.html ├── products.html ├── investors.html ├── sustainability.html ├── news.html ├── contact.html │ ├── assets/ │ ├── css/ │ │ └── styles.css │ ├── js/ │ │ └── scripts.js │ ├── img/ │ │ └── placeholder-logo.png │ └── reports/ │ ├── social-report.pdf │ ├── environmental-report.pdf │ └── financial-report.pdf │ └── README.md
+2. Complete code snippets Include within the same output:
+* HTML for all main pages (with placeholders and sample PT/EN content).
+* Full CSS (styles.css), with responsive design and theming. Include comments for customization.
+* Basic JS (scripts.js) with:
+    * Rotating carousel;
+    * Form validation;
+    * Simulated language toggle;
+    * Logo fallback already implemented.
+* README.md explaining:
+    * How to customize logo and cooperative name;
+    * How to change colors, text, and languages;
+    * How to add new reports and images;
+    * How to deploy on a static server (GitHub Pages, Netlify, etc.);
+    * SEO, accessibility, and performance checklist.
+Acceptance Criteria:
+* All pages functional and interconnected.
+* Responsive, adaptable design.
+* Logo/name placeholder active on all pages.
+* Bilingual (PT/EN) ready for editing.
+* README with clear instructions.
+Priorities:
+* Professionalism and credibility focused on investors.
+* Global accessibility (languages and performance).
+* Conversion and visual clarity.
+Industry Color Trend Note: Modern mining corporative sites favor a harmonious blend of muted earth tones with rich greens and blues, occasionally accented by metallic (gold/copper/silver) details. These add trust, environmental values, and institutional strength. Ensure strong contrast, white space, and accessibility compliance.
