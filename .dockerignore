@@ -1,0 +1,16 @@
+node_modules
+dist
+npm-debug.log
+.DS_Store
+.git
+.gitignore
+.env
+.env.local
+.env.production
+README.md
+DEPLOY.md
+EVITAR_HIBERNACAO.md
+.github
+.replit
+.claude
+replit.nix

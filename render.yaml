@@ -2,11 +2,10 @@ services:
   # Web Service (Backend + Frontend)
   - type: web
     name: minesiteoptimizer
-    env: node
+    env: docker
     region: oregon
     plan: free
-    buildCommand: npm ci && npm run build
-    startCommand: npm start
+    dockerfilePath: ./Dockerfile
     envVars:
       - key: NODE_ENV
         value: production
